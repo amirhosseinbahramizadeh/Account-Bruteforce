@@ -3,7 +3,7 @@ import requests
 import re
 
 def check_sqli_vulnerability(url):
-    vulnerable_patterns = ['id=', 'page=', 'username=', 'password=']
+    vulnerable_patterns = ['id=', 'page=', 'username=', 'password=', 'search=', 'action=', 'location=', 'comment=', 'tags=']
     for pattern in vulnerable_patterns:
         if pattern in url:
             return True
