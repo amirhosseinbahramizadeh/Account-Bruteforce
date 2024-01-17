@@ -1,4 +1,0 @@
-requests
-string
-bs4
-urllib3
